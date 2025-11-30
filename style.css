@@ -8,9 +8,23 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #292929; /* very soft pastel pink */
+    color: #4d4d4d; /* softened dark gray for readability */
     padding: 20px;
+}
+
+.glow {
+    font-size: 3rem;              /* adjust size */
+    text-align: center;
+    color: #fff;                  /* base text color */
+    text-shadow:
+        0 0 5px #fff,            /* inner white glow */
+        0 0 10px #f0f,           /* magenta short */
+        0 0 20px #f0f,           /* magenta broad */
+        0 0 40px #0ff,           /* cyan broad */
+        0 0 60px #0ff,           /* cyan more spread */
+        0 0 80px #f0f,           /* outer magenta */
+        0 0 100px #f0f;          /* outer magenta more spread */
 }
 
 header {
@@ -19,13 +33,17 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
-    color: #2c3e50;
+    font-size: 3rem;
+    color: #d78ca3; /* soft pink */
+}
+header h2 {
+    font-size: 1.6rem;
+    color: #d78ca3; /* soft pink */
 }
 
 header p {
     font-size: 1.1rem;
-    color: #555;
+    color: #b88fa0; /* muted pastel */
     margin-top: 10px;
 }
 
@@ -35,15 +53,16 @@ main {
 }
 
 section {
-    background-color: #fff;
+    background-color: #ffe8f0; /* soft light pink for sections */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease; /* smooth scroll highlight */
 }
 
 h2 {
-    color: #34495e;
+    color: #4a4a4a; /* softened pastel pink for headings */
     margin-bottom: 10px;
 }
 
@@ -53,7 +72,7 @@ ul {
 }
 
 a {
-    color: #2980b9;
+    color: #ff6e9c; /* gentle pastel pink for links */
     text-decoration: none;
 }
 
@@ -61,9 +80,21 @@ a:hover {
     text-decoration: underline;
 }
 
+#qr-code {
+    text-align: center;
+    padding: 20px;
+}
+
+#qr-code img {
+    max-width: 200px;
+    margin-top: 10px;
+    border: 2px solid #dba3b5; /* pastel pink border */
+    border-radius: 10px;
+}
+
 footer {
     text-align: center;
     margin-top: 40px;
     font-size: 0.9rem;
-    color: #777;
+    color: #b88fa0; /* soft pink footer */
 }
