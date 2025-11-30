@@ -86,11 +86,20 @@ a:hover {
 }
 
 #qr-code img {
-    max-width: 200px;
+    width: 80%;              /* scale relative to parent, good for mobile */
+    max-width: 600px;        /* limit the size on large screens */
+    height: auto;            /* maintain aspect ratio */
     margin-top: 10px;
     border: 2px solid #dba3b5; /* pastel pink border */
-    border-radius: 10px;
+    border-radius: 40px;
 }
+
+@media (max-width: 400px) {
+    #qr-code img {
+        width: 95%;         /* almost full width on very small screens */
+    }
+}
+
 
 footer {
     text-align: center;
